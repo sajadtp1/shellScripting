@@ -1,0 +1,17 @@
+#!/bin/bash
+
+######################
+# author: Sajad
+# date: 26/04/25
+#
+# This script outputs the node health
+#
+######################
+
+set -x #debug mode
+
+df -h
+
+free -g
+
+nproc
