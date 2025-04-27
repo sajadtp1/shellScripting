@@ -20,5 +20,5 @@ free -g
 nproc 
 # number of process utilized.
 
-ps -ef | grep "amazon" 
-# here '|' stands for pipe that connect first command to next command and grep to fetch only we are putting.
+ps -ef | grep "amazon" | awk -F" " '{print $2}'
+# here '|' stands for pipe that connect first command to next command and 'grep' to fetch only we are putting, 'awk' retrive specific column which we want.  
