@@ -8,10 +8,17 @@
 #
 ######################
 
-set -x #debug mode
+set -x 
+# debug mode.
 
-df -h
+df -h 
+# it shows available disk space.
 
-free -g
+free -g 
+# memory space (RAM).
 
-nproc
+nproc 
+# number of process utilized.
+
+ps -ef | grep "amazon" 
+# here '|' stands for pipe that connect first command to next command and grep to fetch only we are putting.
