@@ -8,8 +8,9 @@
 #
 ######################
 
-set -x 
-# debug mode.
+set -x # debug mode.
+set -e
+set -o # pipe faile.
 
 df -h 
 # it shows available disk space.
