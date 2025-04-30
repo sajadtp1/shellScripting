@@ -9,7 +9,7 @@
 ######################
 
 set -x # debug mode.
-set -e
+set -e # exit the script when there is a error.
 set -o # pipe faile.
 
 df -h 
